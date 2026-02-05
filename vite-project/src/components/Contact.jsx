@@ -52,7 +52,7 @@ const Contact = () => {
                 <span className="info-icon">📍</span>
                 <div>
                   <strong>Address</strong>
-                  <p>MOQ NO. 01 URAK ROAD NEAR IQRA GATE QUETTA CANTT BALOCHISTAN PAKISTAN</p>
+                  <p>Gujranwali rahwali cantt quaid-e-azam avenue E-type block 23/7PAKISTAN</p>
                 </div>
               </div>
 
