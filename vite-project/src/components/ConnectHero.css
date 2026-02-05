@@ -1,0 +1,79 @@
+.connect-hero {
+  background: #0f172a;
+  color: white;
+  padding: 120px 0;  /* Shorter vertical padding */
+  text-align: center;
+}
+
+.connect-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.connect-hero .section-subtitle {
+  color: #a78bfa;
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.connect-hero h2 {
+  font-size: 58px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.connect-hero h3 {
+  font-size: 46px;
+  font-weight: 600;
+  margin-bottom: 60px;
+  opacity: 0.95;
+  line-height: 1.3;
+}
+
+.work-together-btn {
+  background: #a78bfa;
+  color: white;
+  padding: 18px 48px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s;
+  box-shadow: 0 10px 30px rgba(167, 139, 250, 0.4);
+}
+
+.work-together-btn:hover {
+  background: #8b5cf6;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(167, 139, 250, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .connect-hero {
+    padding: 100px 0;
+  }
+  .connect-hero h2 {
+    font-size: 48px;
+  }
+  .connect-hero h3 {
+    font-size: 38px;
+  }
+  .work-together-btn {
+    padding: 16px 40px;
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 480px) {
+  .connect-hero h2 {
+    font-size: 42px;
+  }
+  .connect-hero h3 {
+    font-size: 34px;
+  }
+}

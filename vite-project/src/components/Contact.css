@@ -1,0 +1,205 @@
+.contact-section {
+  padding: 140px 0 120px;
+  background: linear-gradient(to bottom, #fdf8ff, #f0e6ff);
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.contact-section .section-subtitle {
+  color: #9c27b0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  margin-top: 80px;
+  align-items: start;
+}
+
+.contact-info-side h2 {
+  font-size: 40px;
+  color: #1a1a1a;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.info-desc {
+  text-align: left;
+  color: #666;
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+
+.info-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 60px;
+}
+
+.info-card {
+  background: white;
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  display: flex;
+  gap: 24px;
+  text-align: left;
+  align-items: center;
+}
+
+.info-icon {
+  width: 60px;
+  height: 60px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #D8B4FE;  /* Light pastel purple – exactly like your first screenshot */
+  font-size: 28px;
+  box-shadow: 0 4px 15px rgba(216, 180, 254, 0.3);  /* Very soft purple shadow */
+  transition: all 0.3s;
+}
+
+.info-card:hover .info-icon {
+  background: #D8B4FE;
+  color: white;
+  transform: translateY(-5px);
+}
+
+.info-card strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #1a1a1a;
+}
+
+.info-card p, .info-card a {
+  color: #666;
+  text-decoration: none;
+  margin: 0;
+  font-size: 16px;
+}
+
+.info-card a:hover {
+  color: #A53DFF;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.social-icons a {
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #D8B4FE;  /* Same light pastel purple */
+  font-size: 24px;
+  box-shadow: 0 4px 15px rgba(216, 180, 254, 0.3);  /* Soft shadow */
+  transition: all 0.3s;
+}
+
+.social-icons a:hover {
+  background: #D8B4FE;
+  color: white;
+  transform: translateY(-8px);
+}
+
+/* Rest of the CSS remains exactly the same */
+.contact-form-side h2 {
+  font-size: 36px;
+  color: #1a1a1a;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+form {
+  background: white;
+  border-radius: 30px;
+  padding: 50px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+  text-align: left;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 18px 24px;
+  border: 1px solid #eee;
+  border-radius: 14px;
+  font-size: 16px;
+  background: #f8f9fa;
+  transition: border 0.3s;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #9c27b0;
+}
+
+textarea {
+  resize: vertical;
+  margin-bottom: 30px;
+}
+
+.send-message-btn {
+  background: #9c27b0;
+  color: white;
+  padding: 18px 40px;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 8px 30px rgba(156, 39, 176, 0.3);
+}
+
+.send-message-btn:hover {
+  background: #7b1fa2;
+  transform: translateY(-5px);
+}
+
+.form-status {
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+@media (max-width: 968px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 80px;
+  }
+  .contact-info-side h2, .contact-form-side h2 {
+    text-align: center;
+  }
+  .info-desc, .info-cards, .social-icons {
+    text-align: center;
+    justify-content: center;
+  }
+  .social-icons {
+    justify-content: center;
+  }
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}

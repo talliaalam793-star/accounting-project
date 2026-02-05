@@ -1,0 +1,131 @@
+.process-section {
+  padding: 120px 0;
+  background: #fafafa;
+}
+
+.process-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  color: #9c27b0;
+  font-weight: 600;
+  margin-bottom: 16px;
+  letter-spacing: 2px;
+}
+
+.process-header h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 24px;
+}
+
+.process-desc {
+  font-size: 18px;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto 80px;
+  line-height: 1.7;
+}
+
+/* 4 cards always in one row on desktop */
+.process-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* Smaller cards for perfect fit */
+.process-card {
+  background: white;
+  border-radius: 24px;
+  padding: 36px 24px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.process-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(156, 39, 176, 0.15);
+}
+
+.process-card.active,
+.process-card:hover {
+  background: #9c27b0;
+}
+
+.process-card.active .card-icon,
+.process-card:hover .card-icon {
+  background: white;
+  color: #9c27b0;
+}
+
+.process-card.active h3,
+.process-card:hover h3,
+.process-card.active p,
+.process-card:hover p {
+  color: white;
+}
+
+.card-icon {
+  width: 70px;
+  height: 70px;
+  background: rgba(156, 39, 176, 0.1);
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+  font-size: 32px;
+  color: #9c27b0;
+  transition: all 0.4s ease;
+}
+
+.process-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 14px;
+  transition: color 0.4s ease;
+}
+
+.process-card p {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.6;
+  transition: color 0.4s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .process-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .process-header h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .process-cards {
+    grid-template-columns: 1fr;
+  }
+  .process-container {
+    padding: 0 20px;
+  }
+  .process-header h2 {
+    font-size: 36px;
+  }
+  .card-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+  }
+}
